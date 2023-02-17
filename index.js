@@ -19,3 +19,6 @@ myLinkedList.head.next.next = node3;
 
 console.log(myLinkedList);
 
+console.log(myLinkedList.getHeadNode());
+
+myLinkedList.traverse();

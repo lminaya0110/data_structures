@@ -15,7 +15,26 @@ export class Linkedlist {
     constructor() {
         this.head = null;
     }
+
+    getHeadNode() {
+        return this.head;
+    }
+
+    clear() {
+        this.head = null;
+    }
+
+    traverse() {
+        let walker = this.head; // first node in list
+        while(walker.next !== null) {
+            console.log(walker.data);
+            walker = walker.next; // moving to the next node
+        }
+    }
 }
+
+
+
 
 
 
