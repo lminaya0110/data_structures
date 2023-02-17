@@ -19,6 +19,17 @@ myLinkedList.head.next.next = node3;
 
 console.log(myLinkedList);
 
+// gets head node
 console.log(myLinkedList.getHeadNode());
 
+// traversing
 myLinkedList.traverse();
+
+
+// Removing Node with value of 7
+
+let walker = myLinkedList.getHeadNode();
+
+walker.next = walker.next.next; // this is skipping 7 and pointing to 12
+
+console.log(walker);
